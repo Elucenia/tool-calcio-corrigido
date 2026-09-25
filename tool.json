@@ -1,0 +1,185 @@
+{
+  "tool": {
+    "id": "calcio-corrigido",
+    "title": "Cálcio corrigido pela albumina",
+    "short": "Cálcio total ajustado à albumina sérica",
+    "desc": "Calcule o cálcio total corrigido pela albumina (fórmula de Payne) e veja se há hipocalcemia ou hipercalcemia verdadeira, com os limites da correção.",
+    "lead": "Ajusta o cálcio total para a albumina sérica, porque cerca de 40% do cálcio circula ligado à albumina e a hipoalbuminemia reduz o cálcio total sem alterar o ionizado.",
+    "spec": [
+      "medicina-de-emergencia",
+      "medicina-intensiva",
+      "endocrinologia-e-metabologia",
+      "nefrologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "ca",
+        "Cálcio total",
+        "num",
+        {
+          "min": 2,
+          "max": 20,
+          "step": 0.1,
+          "unit": "mg/dL",
+          "ph": "8,5"
+        }
+      ],
+      [
+        "alb",
+        "Albumina",
+        "num",
+        {
+          "min": 0.5,
+          "max": 6,
+          "step": 0.1,
+          "unit": "g/dL",
+          "ph": "4,0"
+        }
+      ]
+    ],
+    "formula": "<p><strong>Cálcio corrigido</strong> (mg/dL) = cálcio total + 0,8 × (4,0 − albumina em g/dL).</p><p>Em mmol/L: cálcio + 0,02 × (40 − albumina em g/L).</p>",
+    "table": [
+      [
+        "Cálcio corrigido",
+        "Interpretação"
+      ],
+      [
+        "&lt; 8,5 mg/dL",
+        "Hipocalcemia provável"
+      ],
+      [
+        "8,5 a 10,5 mg/dL",
+        "Normal"
+      ],
+      [
+        "&gt; 10,5 mg/dL",
+        "Hipercalcemia provável"
+      ]
+    ],
+    "table_note": "Use a faixa de referência do laboratório local.",
+    "tips": [
+      "A correção é aproximada e erra com frequência em pacientes críticos, com doença renal ou com distúrbio ácido-base: nesses, meça o <strong>cálcio iônico</strong>.",
+      "Alcalose aumenta a ligação do cálcio à albumina e reduz o ionizado (ex.: tetania na hiperventilação), mesmo com cálcio total normal.",
+      "Após transfusão maciça, o citrato quela o cálcio ionizado: monitore o iônico e reponha, independentemente do total corrigido.",
+      "Hipercalcemia corrigida confirmada: dose PTH para separar a causa dependente de PTH (hiperparatireoidismo) da independente (neoplasia, vitamina D, granulomatoses)."
+    ],
+    "sources": [
+      [
+        "Payne RB, Little AJ, Williams RB, Milner JR. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ, 1973.",
+        "https://doi.org/10.1136/bmj.4.5893.643"
+      ]
+    ],
+    "cases": [
+      [
+        "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        {
+          "ca": 7.6,
+          "alb": 2.5
+        },
+        {
+          "raw": {
+            "cac": 8.8
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        {
+          "ca": 7,
+          "alb": 3
+        },
+        {
+          "raw": {
+            "cac": 7.8
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        {
+          "ca": 10.8,
+          "alb": 3.5
+        },
+        {
+          "raw": {
+            "cac": 11.2
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Albumina 4,0: sem correção",
+        {
+          "ca": 9,
+          "alb": 4
+        },
+        {
+          "raw": {
+            "cac": 9
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Albumina de referência deixa cálcio inalterado",
+          "input": {
+            "ca": 9.2,
+            "alb": 4
+          },
+          "expected": {
+            "cac": 9.2
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Reduzir albumina em1 acrescenta0,8",
+          "input": {
+            "ca": 9.2,
+            "alb": 3
+          },
+          "expected": {
+            "cac": 10
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

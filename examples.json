@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+    "input": {
+      "ca": 7.6,
+      "alb": 2.5
+    },
+    "expected": {
+      "raw": {
+        "cac": 8.8
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "ca": 7.6,
+      "alb": 2.5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+    "input": {
+      "ca": 7,
+      "alb": 3
+    },
+    "expected": {
+      "raw": {
+        "cac": 7.8
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "ca": 7,
+      "alb": 3
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+    "input": {
+      "ca": 10.8,
+      "alb": 3.5
+    },
+    "expected": {
+      "raw": {
+        "cac": 11.2
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "ca": 10.8,
+      "alb": 3.5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Albumina 4,0: sem correção",
+    "input": {
+      "ca": 9,
+      "alb": 4
+    },
+    "expected": {
+      "raw": {
+        "cac": 9
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "ca": 9,
+      "alb": 4
+    },
+    "expandedZeroOptions": []
+  }
+]
