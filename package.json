@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-calcio-corrigido",
   "version": "0.1.0",
-  "description": "Cálcio corrigido pela albumina · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Cálcio corrigido pela albumina · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
