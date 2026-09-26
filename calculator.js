@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-calcio-corrigido · Elucenia · https://github.com/Elucenia/tool-calcio-corrigido
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"calcio-corrigido","title":"Cálcio corrigido pela albumina","fields":[["ca","Cálcio total","num",{"min":2,"max":20,"step":0.1,"unit":"mg/dL","ph":"8,5"}],["alb","Albumina","num",{"min":0.5,"max":6,"step":0.1,"unit":"g/dL","ph":"4,0"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
