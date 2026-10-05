@@ -1,0 +1,793 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "calcio-corrigido",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/calcio-corrigido/calculator.js",
+    "sha256": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0",
+    "bytes": 4829
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "calcio-corrigido",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+      "originalInput": {
+        "ca": 7.6,
+        "alb": 2.5
+      },
+      "input": {
+        "ca": 7.6,
+        "alb": 2.5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cac": 8.8
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "8,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 8.8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ca": 7.6,
+            "alb": 2.5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+          "startedAt": "2026-10-05T17:35:59.153Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "calcio-corrigido",
+              "main": [
+                "8,8",
+                "mg/dL"
+              ],
+              "label": "Cálcio total corrigido pela albumina",
+              "raw": {
+                "cac": 8.8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "53b176616bca3b1f1e09939cdfabf87ec476f3b233b9dd77afda93915677f624",
+          "bytes": 162,
+          "elapsedMs": 3.639500000001135
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "startedAt": "2026-10-05T17:35:59.153Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "calcio-corrigido",
+            "main": [
+              "8,8",
+              "mg/dL"
+            ],
+            "label": "Cálcio total corrigido pela albumina",
+            "raw": {
+              "cac": 8.8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "53b176616bca3b1f1e09939cdfabf87ec476f3b233b9dd77afda93915677f624",
+        "bytes": 162,
+        "elapsedMs": 3.639500000001135
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cac",
+            "expected": 8.8,
+            "obtained": 8.8,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cac",
+            "expected": 8.8,
+            "obtained": 8.8,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "8,8",
+            "obtained": "8,8",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mg/dL",
+            "obtained": "mg/dL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "calcio-corrigido",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+      "originalInput": {
+        "ca": 7,
+        "alb": 3
+      },
+      "input": {
+        "ca": 7,
+        "alb": 3
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cac": 7.8
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "7,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 7.8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ca": 7,
+            "alb": 3
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+          "startedAt": "2026-10-05T17:35:59.467Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "calcio-corrigido",
+              "main": [
+                "7,8",
+                "mg/dL"
+              ],
+              "label": "Cálcio total corrigido pela albumina",
+              "raw": {
+                "cac": 7.8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "96f737456ea8f20825e96e5e57312724852cb3393da7f58c99717ca063df37f2",
+          "bytes": 162,
+          "elapsedMs": 7.002999999996973
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "startedAt": "2026-10-05T17:35:59.467Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "calcio-corrigido",
+            "main": [
+              "7,8",
+              "mg/dL"
+            ],
+            "label": "Cálcio total corrigido pela albumina",
+            "raw": {
+              "cac": 7.8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "96f737456ea8f20825e96e5e57312724852cb3393da7f58c99717ca063df37f2",
+        "bytes": 162,
+        "elapsedMs": 7.002999999996973
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cac",
+            "expected": 7.8,
+            "obtained": 7.8,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cac",
+            "expected": 7.8,
+            "obtained": 7.8,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,8",
+            "obtained": "7,8",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mg/dL",
+            "obtained": "mg/dL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "calcio-corrigido",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+      "originalInput": {
+        "ca": 10.8,
+        "alb": 3.5
+      },
+      "input": {
+        "ca": 10.8,
+        "alb": 3.5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cac": 11.2
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "11,2",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 11.200000000000001
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ca": 10.8,
+            "alb": 3.5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+          "startedAt": "2026-10-05T17:35:59.778Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "calcio-corrigido",
+              "main": [
+                "11,2",
+                "mg/dL"
+              ],
+              "label": "Cálcio total corrigido pela albumina",
+              "raw": {
+                "cac": 11.200000000000001
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6eb6715ce14e0fe726f194ee8d8f7ec2cff794c2620261215a57968409bd23fb",
+          "bytes": 178,
+          "elapsedMs": 2.4945000000006985
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "startedAt": "2026-10-05T17:35:59.778Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "calcio-corrigido",
+            "main": [
+              "11,2",
+              "mg/dL"
+            ],
+            "label": "Cálcio total corrigido pela albumina",
+            "raw": {
+              "cac": 11.200000000000001
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6eb6715ce14e0fe726f194ee8d8f7ec2cff794c2620261215a57968409bd23fb",
+        "bytes": 178,
+        "elapsedMs": 2.4945000000006985
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cac",
+            "expected": 11.2,
+            "obtained": 11.200000000000001,
+            "tolerance": 0.050000010000000004,
+            "difference": 1.7763568394002505e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cac",
+            "expected": 11.200000000000001,
+            "obtained": 11.200000000000001,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "11,2",
+            "obtained": "11,2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mg/dL",
+            "obtained": "mg/dL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "calcio-corrigido",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Albumina 4,0: sem correção",
+      "originalInput": {
+        "ca": 9,
+        "alb": 4
+      },
+      "input": {
+        "ca": 9,
+        "alb": 4
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "cac": 9
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "9,0",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ca": 9,
+            "alb": 4
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+          "startedAt": "2026-10-05T17:36:00.092Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "calcio-corrigido",
+              "main": [
+                "9,0",
+                "mg/dL"
+              ],
+              "label": "Cálcio total corrigido pela albumina",
+              "raw": {
+                "cac": 9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ad96425fee483b948f641cec8199684d139a2b44009dfebe43d2b845f92e0fc8",
+          "bytes": 160,
+          "elapsedMs": 3.3117999999994936
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/calcio-corrigido/calculate",
+        "startedAt": "2026-10-05T17:36:00.092Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "calcio-corrigido",
+            "main": [
+              "9,0",
+              "mg/dL"
+            ],
+            "label": "Cálcio total corrigido pela albumina",
+            "raw": {
+              "cac": 9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ad96425fee483b948f641cec8199684d139a2b44009dfebe43d2b845f92e0fc8",
+        "bytes": 160,
+        "elapsedMs": 3.3117999999994936
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.cac",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cac",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "9,0",
+            "obtained": "9,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mg/dL",
+            "obtained": "mg/dL",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
