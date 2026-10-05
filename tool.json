@@ -3,8 +3,9 @@
     "id": "calcio-corrigido",
     "title": "Cálcio corrigido pela albumina",
     "short": "Cálcio total ajustado à albumina sérica",
-    "desc": "Calcule o cálcio total corrigido pela albumina (fórmula de Payne) e veja se há hipocalcemia ou hipercalcemia verdadeira, com os limites da correção.",
+    "desc": "Calcule o cálcio total corrigido pela albumina (fórmula de Payne) e estime o cálcio ajustado, considerando os limites da correção. O resultado não mede o cálcio ionizado.",
     "lead": "Ajusta o cálcio total para a albumina sérica, porque cerca de 40% do cálcio circula ligado à albumina e a hipoalbuminemia reduz o cálcio total sem alterar o ionizado.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-de-emergencia",
       "medicina-intensiva",
@@ -39,31 +40,6 @@
       ]
     ],
     "formula": "<p><strong>Cálcio corrigido</strong> (mg/dL) = cálcio total + 0,8 × (4,0 − albumina em g/dL).</p><p>Em mmol/L: cálcio + 0,02 × (40 − albumina em g/L).</p>",
-    "table": [
-      [
-        "Cálcio corrigido",
-        "Interpretação"
-      ],
-      [
-        "&lt; 8,5 mg/dL",
-        "Hipocalcemia provável"
-      ],
-      [
-        "8,5 a 10,5 mg/dL",
-        "Normal"
-      ],
-      [
-        "&gt; 10,5 mg/dL",
-        "Hipercalcemia provável"
-      ]
-    ],
-    "table_note": "Use a faixa de referência do laboratório local.",
-    "tips": [
-      "A correção é aproximada e erra com frequência em pacientes críticos, com doença renal ou com distúrbio ácido-base: nesses, meça o <strong>cálcio iônico</strong>.",
-      "Alcalose aumenta a ligação do cálcio à albumina e reduz o ionizado (ex.: tetania na hiperventilação), mesmo com cálcio total normal.",
-      "Após transfusão maciça, o citrato quela o cálcio ionizado: monitore o iônico e reponha, independentemente do total corrigido.",
-      "Hipercalcemia corrigida confirmada: dose PTH para separar a causa dependente de PTH (hiperparatireoidismo) da independente (neoplasia, vitamina D, granulomatoses)."
-    ],
     "sources": [
       [
         "Payne RB, Little AJ, Williams RB, Milner JR. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ, 1973.",
@@ -124,9 +100,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -139,38 +112,114 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Ajuste simplificado associado a Payne 1973:Ca+0,8×(4−albumina); nãoé cálcio ionizado medido",
+    "implementationVersion": "calcio-corrigido@native-2026-10-03+565b18e3f417",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1587636/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cálcio corrigido (mg/dL) = cálcio total + 0,8 × (4,0 − albumina em g/dL). Em mmol/L: cálcio + 0,02 × (40 − albumina em g/L).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ca",
+            "label": "Cálcio total",
+            "type": "num",
+            "min": 2,
+            "max": 20,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alb",
+            "label": "Albumina",
+            "type": "num",
+            "min": 0.5,
+            "max": 6,
+            "unit": "g/dL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "bf89af6080874d64fcb423054a8de7b56e908ca126a18da3c38cd25a01f1b273"
+      },
+      "sourceEditions": [
         {
-          "label": "Albumina de referência deixa cálcio inalterado",
-          "input": {
-            "ca": 9.2,
-            "alb": 4
+          "citation": "Payne RB, Little AJ, Williams RB, Milner JR. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ, 1973.",
+          "url": "https://doi.org/10.1136/bmj.4.5893.643",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Interpretation of serum calcium in patients with abnormal serum proteins.",
+            "year": "1973",
+            "firstPublicationDate": "1973-12-01",
+            "doi": "10.1136/bmj.4.5893.643",
+            "pmid": "4758544",
+            "pmcid": "PMC1587636",
+            "journal": "British medical journal",
+            "authors": "Payne RB, Little AJ, Williams RB, Milner JR."
           },
-          "expected": {
-            "cac": 9.2
-          },
-          "status": "passed",
-          "failures": []
-        },
-        {
-          "label": "Reduzir albumina em1 acrescenta0,8",
-          "input": {
-            "ca": 9.2,
-            "alb": 3
-          },
-          "expected": {
-            "cac": 10
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1587636/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "8a05837050f81cf11eb64a0cd49e951808edcbddabd1a2db9ef864435e4172f5",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0"
+    },
+    "limits": "A fórmula da publicação Payne 1973 foi derivada de amostras com alterações proteicas enviadas para testes de função hepática e emprega coeficiente 1 para albumina, com cálcio em mg/100 mL e albumina em g/100 mL. A variante simplificada local emprega 0,8 e necessita de fonte própria para essa modificação. Cálcio ajustado é uma estimativa e não uma dosagem de cálcio ionizado.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.747Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Não foi conferida fonte própria para a variante 0,8 nem desempenho em insuficiência renal, pacientes críticos ou cálcio ionizado. Não substituir medida ionizada por inferência de equivalência."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/calcio-corrigido/calculator.js",
+    "bytes": 4829,
+    "sha256": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "00bc9ee4b4c61642fab2855d8efae85048e0986fc0c791e5f6a8dc2e45bb54e4",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "1da3850ca1956ea4fc8f8faba68ddb992dc15ebfcafae3dca1999f088f2fbba5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "1da3850ca1956ea4fc8f8faba68ddb992dc15ebfcafae3dca1999f088f2fbba5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

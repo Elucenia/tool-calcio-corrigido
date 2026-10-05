@@ -1,6 +1,13 @@
 [
   {
-    "label": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+    "id": "calcio-corrigido",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+    "originalInput": {
+      "ca": 7.6,
+      "alb": 2.5
+    },
     "input": {
       "ca": 7.6,
       "alb": 2.5
@@ -11,14 +18,34 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "ca": 7.6,
-      "alb": 2.5
+    "recordedResult": {
+      "main": [
+        "8,8",
+        "mg/dL"
+      ],
+      "label": "Cálcio total corrigido pela albumina",
+      "raw": {
+        "cac": 8.8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+    "id": "calcio-corrigido",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+    "originalInput": {
+      "ca": 7,
+      "alb": 3
+    },
     "input": {
       "ca": 7,
       "alb": 3
@@ -29,14 +56,34 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "ca": 7,
-      "alb": 3
+    "recordedResult": {
+      "main": [
+        "7,8",
+        "mg/dL"
+      ],
+      "label": "Cálcio total corrigido pela albumina",
+      "raw": {
+        "cac": 7.8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+    "id": "calcio-corrigido",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+    "originalInput": {
+      "ca": 10.8,
+      "alb": 3.5
+    },
     "input": {
       "ca": 10.8,
       "alb": 3.5
@@ -47,14 +94,34 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "ca": 10.8,
-      "alb": 3.5
+    "recordedResult": {
+      "main": [
+        "11,2",
+        "mg/dL"
+      ],
+      "label": "Cálcio total corrigido pela albumina",
+      "raw": {
+        "cac": 11.200000000000001
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Albumina 4,0: sem correção",
+    "id": "calcio-corrigido",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Albumina 4,0: sem correção",
+    "originalInput": {
+      "ca": 9,
+      "alb": 4
+    },
     "input": {
       "ca": 9,
       "alb": 4
@@ -65,10 +132,23 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "ca": 9,
-      "alb": 4
+    "recordedResult": {
+      "main": [
+        "9,0",
+        "mg/dL"
+      ],
+      "label": "Cálcio total corrigido pela albumina",
+      "raw": {
+        "cac": 9
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

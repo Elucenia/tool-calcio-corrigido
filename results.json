@@ -1,0 +1,338 @@
+{
+  "id": "calcio-corrigido",
+  "at": "2026-10-05T17:29:08.056Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/calcio-corrigido/calculator.js",
+    "bytes": 4829,
+    "sha256": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0"
+  },
+  "cases": [
+    {
+      "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+      "input": {
+        "ca": 7.6,
+        "alb": 2.5
+      },
+      "obtained": {
+        "id": "calcio-corrigido",
+        "main": [
+          "8,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 8.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cac",
+          "expected": 8.8,
+          "obtained": 8.8,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cac",
+          "expected": 8.8,
+          "obtained": 8.8,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "8,8",
+          "obtained": "8,8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+      "input": {
+        "ca": 7,
+        "alb": 3
+      },
+      "obtained": {
+        "id": "calcio-corrigido",
+        "main": [
+          "7,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 7.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cac",
+          "expected": 7.8,
+          "obtained": 7.8,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cac",
+          "expected": 7.8,
+          "obtained": 7.8,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7,8",
+          "obtained": "7,8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+      "input": {
+        "ca": 10.8,
+        "alb": 3.5
+      },
+      "obtained": {
+        "id": "calcio-corrigido",
+        "main": [
+          "11,2",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 11.200000000000001
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cac",
+          "expected": 11.2,
+          "obtained": 11.200000000000001,
+          "tolerance": 0.050000010000000004,
+          "difference": 1.7763568394002505e-15,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cac",
+          "expected": 11.200000000000001,
+          "obtained": 11.200000000000001,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "11,2",
+          "obtained": "11,2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Albumina 4,0: sem correção",
+      "input": {
+        "ca": 9,
+        "alb": 4
+      },
+      "obtained": {
+        "id": "calcio-corrigido",
+        "main": [
+          "9,0",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cac",
+          "expected": 9,
+          "obtained": 9,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cac",
+          "expected": 9,
+          "obtained": 9,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "9,0",
+          "obtained": "9,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

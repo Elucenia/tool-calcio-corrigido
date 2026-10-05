@@ -1,60 +1,32 @@
 # Cálcio corrigido pela albumina
 
-Identificador: `calcio-corrigido`. Pacote independente da plataforma ELUCENIA, para navegador e Node.js.
+ELUCENIA · Felipe Guedes. Current isolated per-tool source candidate.
 
-## Situação
+## Documentation in ten languages
 
-- Revisão: **needs-review**. Revisão documental e clínica independente pendente.
-- Execução: **disponível para reprodução técnica da fórmula**.
-- Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 4 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **realizada em 2026-09-25**, 40 comparações conformes.
-- Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
+- [Português (Brasil)](documentation/pt-BR.md) · [ELUCENIA](https://elucenia.org/pt-br/ferramentas/calcio-corrigido)
+- [English](documentation/en.md) · [ELUCENIA](https://elucenia.org/en/tools/calcio-corrigido)
+- [Español](documentation/es.md) · [ELUCENIA](https://elucenia.org/es/herramientas/calcio-corrigido)
+- [Français](documentation/fr.md) · [ELUCENIA](https://elucenia.org/fr/outils/calcio-corrigido)
+- [Deutsch](documentation/de.md) · [ELUCENIA](https://elucenia.org/de/werkzeuge/calcio-corrigido)
+- [Italiano](documentation/it.md) · [ELUCENIA](https://elucenia.org/it/strumenti/calcio-corrigido)
+- [العربية](documentation/ar.md) · [ELUCENIA](https://elucenia.org/ar/tools/calcio-corrigido)
+- [中文](documentation/zh.md) · [ELUCENIA](https://elucenia.org/zh/tools/calcio-corrigido)
+- [日本語](documentation/ja.md) · [ELUCENIA](https://elucenia.org/ja/tools/calcio-corrigido)
+- [हिन्दी](documentation/hi.md) · [ELUCENIA](https://elucenia.org/hi/tools/calcio-corrigido)
 
-## Uso no Node.js
+The README introduction is in English; the linked usage, field, method, limits, source and review documentation is available in each listed language. Bibliographic titles and schema identifiers retain their source identity.
 
-```js
-const { calculate } = require('./calculator.js');
-const example = require('./examples.json')[0];
-console.log(calculate(example.input));
-```
+## Local use and tests
 
-Execute `node test.cjs` (ou `npm test`) para conferir os exemplos. Abra `index.html` para usar a versão local do navegador. Não há dependências npm.
+Serve this directory with a static HTTP server and open index.html. The demonstration calculates locally and supports the ten linked authorial interface/documentation editions. Node: require("./calculator.js").calculate(input). Run `node test.cjs` or `npm test` to replay all 4 documented source examples and 24 schema/domain rejection cases. Tests verify the package files before executing and write no files. No dependency install, remote calculation API, account or app source tree is required.
 
-## Contrato
+## Edition and evidence
 
-`calculate(input)` recebe um objeto, devolve `{id, main, label, raw, clinicalValidation}` ou `{error, code, field?}`. Consulte `tool.json` e `metadata.fields` para nomes, unidades, opções e intervalos. Números aceitam valores finitos ou strings numéricas; opções precisam corresponder às chaves documentadas. Campos obrigatórios vazios, booleanos inválidos, valores fora de intervalo e resultados não finitos são rejeitados. Somente checkbox omitido representa falso; um campo numérico ou uma opção obrigatória nunca é preenchido automaticamente.
+Ajuste simplificado associado a Payne 1973:Ca+0,8×(4−albumina); nãoé cálcio ionizado medido
 
-Interpretações, ordens terapêuticas e tabelas herdadas não são retornadas pelo adaptador. Classificações e valores ainda dependem da população e das limitações da fonte.
+results.json records fresh current source and packaged browser VM parity. Browser VM is an isolated JavaScript realm, not a real browser UI/hydration journey. The new served HTTP R6 replay is pending and will be attached only after completion. Existing synthetic source expectations are not a newly derived clinical oracle. Independent clinical and professional language approval have not been performed.
 
-## Fórmula / versão
+## Source and licence scope
 
-Cálcio corrigido (mg/dL) = cálcio total + 0,8 × (4,0 − albumina em g/dL).Em mmol/L: cálcio + 0,02 × (40 − albumina em g/L).
-
-A transcrição acima documenta o acervo de origem e pode requerer atualização. 
-
-## Condições e limites
-
-Ajusta o cálcio total para a albumina sérica, porque cerca de 40% do cálcio circula ligado à albumina e a hipoalbuminemia reduz o cálcio total sem alterar o ionizado.
-
-Confirme população, exclusões, unidades, versão e diretriz aplicável ao país e serviço. O resultado não deve ser utilizado isoladamente para diagnóstico, alta ou prescrição. O pacote não representa certificação clínica, aprovação regulatória ou indicação para toda população. Veja a revisão completa em `tool.json`.
-
-## Fontes originais
-
-- [Payne RB, Little AJ, Williams RB, Milner JR. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ, 1973.](https://doi.org/10.1136/bmj.4.5893.643)
-
-## Exemplos e rastreabilidade
-
-`examples.json` preserva `originalInput`, expectativa e entrada explícita do exemplo. Não foi necessário expandir opções zero nos exemplos.
-
-## O que esta ferramenta não faz
-
-- Não diagnostica, não prescreve e não substitui a avaliação de um médico. O resultado é a reprodução técnica de uma fórmula ou escore publicado.
-- Não envia dados a lugar nenhum: roda no navegador ou no Node.js, sem rede, sem telemetria, sem armazenamento.
-- Não guarda nem identifica pacientes. Não use com dados identificáveis fora de um ambiente que você controla.
-- Não tem validação clínica independente nem aprovação regulatória (ver "Situação").
-
-## Autoria e licença
-
-Criado e mantido por **Felipe Guedes** (Engenheiro de Software e Arquiteto de Sistemas, Toledo, Paraná, Brasil) para a **ELUCENIA**, uma cadeia médica e científica global para acelerar a descoberta. Criado em 2026-09-25 na organização [github.com/Elucenia](https://github.com/Elucenia).
-
-Licença **Apache-2.0** (arquivo `LICENSE`): você pode usar, copiar, modificar e embutir este código no seu site ou sistema, inclusive comercial, desde que mantenha o arquivo `NOTICE` e o aviso de copyright e declare as modificações. A licença cobre o código deste pacote; instrumentos, questionários, tabelas, traduções e marcas citados nas fontes mantêm os direitos dos seus titulares (ver `NOTICE`). Detalhes em `AUTHORSHIP.md`, `CITATION.cff`, `SECURITY.md` e `CONTRIBUTING.md`. Contato: contato@elucenia.org.
+Scientific sources, inputs, units, formula and population limits are recorded in tool.json and the ten documentation files. Original Apache attribution files and current MIT component notices are preserved without rewriting. CODE-COMPONENTS.md maps the licences. SOURCE-RIGHTS-REVIEW.md records the separate third-party questionnaire/instrument-expression and translation review scope. No instrument-wide permission or official endorsement is claimed.
