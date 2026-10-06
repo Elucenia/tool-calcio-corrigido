@@ -65,3 +65,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Calcium corrigé dans la plage normale (8,5 à 10,5 mg/dL)
+
+La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.
+
+
+### 2
+
+Calcium corrigé bas (< 8,5 mg/dL) : hypocalcémie probable
+
+La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.
+
+
+### 3
+
+Calcium corrigé élevé (> 10,5 mg/dL) : hypercalcémie probable
+
+La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.
+
+
+### 4
+
+Calcium corrigé dans la plage normale (8,5 à 10,5 mg/dL)
+
+La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.
+

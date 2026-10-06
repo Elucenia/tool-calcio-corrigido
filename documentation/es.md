@@ -65,3 +65,35 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Calcio corregido en el rango normal (8,5 a 10,5 mg/dL)
+
+La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.
+
+
+### 2
+
+Calcio corregido bajo (< 8,5 mg/dL): hipocalcemia probable
+
+La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.
+
+
+### 3
+
+Calcio corregido elevado (> 10,5 mg/dL): hipercalcemia probable
+
+La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.
+
+
+### 4
+
+Calcio corregido en el rango normal (8,5 a 10,5 mg/dL)
+
+La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.
+

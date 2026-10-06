@@ -65,3 +65,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Corrected calcium in the normal range (8,5 to 10,5 mg/dL)
+
+The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.
+
+
+### 2
+
+Low corrected calcium (< 8,5 mg/dL): probable hypocalcemia
+
+The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.
+
+
+### 3
+
+High corrected calcium (> 10,5 mg/dL): probable hypercalcemia
+
+The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.
+
+
+### 4
+
+Corrected calcium in the normal range (8,5 to 10,5 mg/dL)
+
+The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.
+

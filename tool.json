@@ -115,7 +115,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Ajuste simplificado associado a Payne 1973:Ca+0,8×(4−albumina); nãoé cálcio ionizado medido",
-    "implementationVersion": "calcio-corrigido@native-2026-10-03+565b18e3f417",
+    "implementationVersion": "calcio-corrigido@native-2026-10-05+4eef46fc02f2",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1587636/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -184,7 +184,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0"
+      "implementationHash": "4eef46fc02f2cecb25796e18298139208a28923f8a0369497079acafa22312b6",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "calcio-corrigido@native-2026-10-03+565b18e3f417",
+          "previousImplementationHash": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0",
+          "implementationHash": "4eef46fc02f2cecb25796e18298139208a28923f8a0369497079acafa22312b6",
+          "scientificBodySha256": "95303bcec13297c4cc8bf31d4021b83124db2f0f74deb30f9da7e5ba274cc793",
+          "metadataContractHash": "bf89af6080874d64fcb423054a8de7b56e908ca126a18da3c38cd25a01f1b273",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A fórmula da publicação Payne 1973 foi derivada de amostras com alterações proteicas enviadas para testes de função hepática e emprega coeficiente 1 para albumina, com cálcio em mg/100 mL e albumina em g/100 mL. A variante simplificada local emprega 0,8 e necessita de fonte própria para essa modificação. Cálcio ajustado é uma estimativa e não uma dosagem de cálcio ionizado.",
     "sourceLimitEvidence": {
@@ -203,20 +231,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/calcio-corrigido/calculator.js",
-    "bytes": 4829,
-    "sha256": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0"
+    "bytes": 5034,
+    "sha256": "4eef46fc02f2cecb25796e18298139208a28923f8a0369497079acafa22312b6"
   },
-  "sourceToolSha256": "00bc9ee4b4c61642fab2855d8efae85048e0986fc0c791e5f6a8dc2e45bb54e4",
+  "sourceToolSha256": "8ef64216f460050a09176995ef21f387470cde3004d95bd1772d3f33eb8a5e27",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "1da3850ca1956ea4fc8f8faba68ddb992dc15ebfcafae3dca1999f088f2fbba5",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "1da3850ca1956ea4fc8f8faba68ddb992dc15ebfcafae3dca1999f088f2fbba5",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

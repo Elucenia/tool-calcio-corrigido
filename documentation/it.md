@@ -65,3 +65,35 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Calcio corretto nell'intervallo normale (8,5 a 10,5 mg/dL)
+
+La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.
+
+
+### 2
+
+Calcio corretto basso (< 8,5 mg/dL): ipocalcemia probabile
+
+La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.
+
+
+### 3
+
+Calcio corretto elevato (> 10,5 mg/dL): ipercalcemia probabile
+
+La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.
+
+
+### 4
+
+Calcio corretto nell'intervallo normale (8,5 a 10,5 mg/dL)
+
+La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.
+

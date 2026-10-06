@@ -1,0 +1,707 @@
+{
+  "id": "calcio-corrigido",
+  "implementationVersion": "calcio-corrigido@native-2026-10-05+4eef46fc02f2",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cálcio corrigido na faixa normal (8,5 a 10,5 mg/dL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cálcio corrigido baixo (< 8,5 mg/dL): hipocalcemia provável",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cálcio corrigido elevado (> 10,5 mg/dL): hipercalcemia provável",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cálcio corrigido na faixa normal (8,5 a 10,5 mg/dL)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Corrected calcium in the normal range (8,5 to 10,5 mg/dL)",
+            "locale": "en",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.",
+            "locale": "en",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low corrected calcium (< 8,5 mg/dL): probable hypocalcemia",
+            "locale": "en",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.",
+            "locale": "en",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High corrected calcium (> 10,5 mg/dL): probable hypercalcemia",
+            "locale": "en",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.",
+            "locale": "en",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Corrected calcium in the normal range (8,5 to 10,5 mg/dL)",
+            "locale": "en",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "The correction is approximate: in a critically ill patient, with acid-base disorder or kidney disease, confirm with ionized calcium.",
+            "locale": "en",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corregido en el rango normal (8,5 a 10,5 mg/dL)",
+            "locale": "es",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.",
+            "locale": "es",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corregido bajo (< 8,5 mg/dL): hipocalcemia probable",
+            "locale": "es",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.",
+            "locale": "es",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corregido elevado (> 10,5 mg/dL): hipercalcemia probable",
+            "locale": "es",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.",
+            "locale": "es",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corregido en el rango normal (8,5 a 10,5 mg/dL)",
+            "locale": "es",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "La corrección es aproximada: en un paciente crítico, con trastorno ácido-base o enfermedad renal, confirmar con calcio iónico.",
+            "locale": "es",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcium corrigé dans la plage normale (8,5 à 10,5 mg/dL)",
+            "locale": "fr",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.",
+            "locale": "fr",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcium corrigé bas (< 8,5 mg/dL) : hypocalcémie probable",
+            "locale": "fr",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.",
+            "locale": "fr",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcium corrigé élevé (> 10,5 mg/dL) : hypercalcémie probable",
+            "locale": "fr",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.",
+            "locale": "fr",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcium corrigé dans la plage normale (8,5 à 10,5 mg/dL)",
+            "locale": "fr",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "La correction est approximative : chez un patient critique, en cas de trouble acido-basique ou de maladie rénale, confirmer par le calcium ionisé.",
+            "locale": "fr",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Korrigiertes Kalzium im Normbereich (8,5 bis 10,5 mg/dL)",
+            "locale": "de",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges korrigiertes Kalzium (< 8,5 mg/dL): wahrscheinliche Hypokalzämie",
+            "locale": "de",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Erhöhtes korrigiertes Kalzium (> 10,5 mg/dL): wahrscheinliche Hyperkalzämie",
+            "locale": "de",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Korrigiertes Kalzium im Normbereich (8,5 bis 10,5 mg/dL)",
+            "locale": "de",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corretto nell'intervallo normale (8,5 a 10,5 mg/dL)",
+            "locale": "it",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.",
+            "locale": "it",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corretto basso (< 8,5 mg/dL): ipocalcemia probabile",
+            "locale": "it",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.",
+            "locale": "it",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corretto elevato (> 10,5 mg/dL): ipercalcemia probabile",
+            "locale": "it",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.",
+            "locale": "it",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Calcio corretto nell'intervallo normale (8,5 a 10,5 mg/dL)",
+            "locale": "it",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "La correzione è approssimativa: in un paziente critico, con disturbo acido-base o malattia renale, confermare con il calcio ionizzato.",
+            "locale": "it",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الكالسيوم المصحح ضمن النطاق الطبيعي (8,5 إلى 10,5 mg/dL)",
+            "locale": "ar",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "التصحيح تقريبي: لدى مريض حرج، مع اضطراب حمضي-قاعدي أو مرض كلوي، تأكّد بالكالسيوم المتأين.",
+            "locale": "ar",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الكالسيوم المصحح منخفض (< 8,5 mg/dL): نقص كالسيوم الدم محتمل",
+            "locale": "ar",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "التصحيح تقريبي: لدى مريض حرج، مع اضطراب حمضي-قاعدي أو مرض كلوي، تأكّد بالكالسيوم المتأين.",
+            "locale": "ar",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الكالسيوم المصحح مرتفع (> 10,5 mg/dL): فرط كالسيوم الدم محتمل",
+            "locale": "ar",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "التصحيح تقريبي: لدى مريض حرج، مع اضطراب حمضي-قاعدي أو مرض كلوي، تأكّد بالكالسيوم المتأين.",
+            "locale": "ar",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الكالسيوم المصحح ضمن النطاق الطبيعي (8,5 إلى 10,5 mg/dL)",
+            "locale": "ar",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "التصحيح تقريبي: لدى مريض حرج، مع اضطراب حمضي-قاعدي أو مرض كلوي، تأكّد بالكالسيوم المتأين.",
+            "locale": "ar",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "校正钙处于正常范围（8,5 至 10,5 mg/dL）",
+            "locale": "zh",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "该校正为近似值：在危重患者、酸碱失衡或肾脏疾病情况下，请用离子钙确认。",
+            "locale": "zh",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "校正钙偏低（< 8,5 mg/dL）：可能低钙血症",
+            "locale": "zh",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "该校正为近似值：在危重患者、酸碱失衡或肾脏疾病情况下，请用离子钙确认。",
+            "locale": "zh",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "校正钙升高（> 10,5 mg/dL）：可能高钙血症",
+            "locale": "zh",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "该校正为近似值：在危重患者、酸碱失衡或肾脏疾病情况下，请用离子钙确认。",
+            "locale": "zh",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "校正钙处于正常范围（8,5 至 10,5 mg/dL）",
+            "locale": "zh",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "该校正为近似值：在危重患者、酸碱失衡或肾脏疾病情况下，请用离子钙确认。",
+            "locale": "zh",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "補正カルシウムは正常範囲（8,5～10,5 mg/dL）",
+            "locale": "ja",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "補正は概算です。重症患者、酸塩基異常または腎疾患では、イオン化カルシウムで確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "補正カルシウム低値（< 8,5 mg/dL）：低カルシウム血症の可能性",
+            "locale": "ja",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "補正は概算です。重症患者、酸塩基異常または腎疾患では、イオン化カルシウムで確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "補正カルシウム高値（> 10,5 mg/dL）：高カルシウム血症の可能性",
+            "locale": "ja",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "補正は概算です。重症患者、酸塩基異常または腎疾患では、イオン化カルシウムで確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "補正カルシウムは正常範囲（8,5～10,5 mg/dL）",
+            "locale": "ja",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "補正は概算です。重症患者、酸塩基異常または腎疾患では、イオン化カルシウムで確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सुधारित कैल्शियम सामान्य सीमा में (8,5 से 10,5 mg/dL)",
+            "locale": "hi",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "सुधार अनुमानित है: गंभीर रोगी, अम्ल-क्षार विकार या गुर्दे की बीमारी में, आयनित कैल्शियम से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सुधारित कैल्शियम कम (< 8,5 mg/dL): संभावित हाइपोकैल्सीमिया",
+            "locale": "hi",
+            "template": "documented-authored-f7db10f613724b5c0637"
+          },
+          "note": {
+            "text": "सुधार अनुमानित है: गंभीर रोगी, अम्ल-क्षार विकार या गुर्दे की बीमारी में, आयनित कैल्शियम से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सुधारित कैल्शियम उच्च (> 10,5 mg/dL): संभावित हाइपरकैल्सीमिया",
+            "locale": "hi",
+            "template": "documented-authored-f61c08c54d5d00239689"
+          },
+          "note": {
+            "text": "सुधार अनुमानित है: गंभीर रोगी, अम्ल-क्षार विकार या गुर्दे की बीमारी में, आयनित कैल्शियम से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Albumina 4,0: sem correção",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सुधारित कैल्शियम सामान्य सीमा में (8,5 से 10,5 mg/dL)",
+            "locale": "hi",
+            "template": "documented-authored-6cfd77b73b2aaa5fd958"
+          },
+          "note": {
+            "text": "सुधार अनुमानित है: गंभीर रोगी, अम्ल-क्षार विकार या गुर्दे की बीमारी में, आयनित कैल्शियम से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-1c673d4236e8d4583f3a"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

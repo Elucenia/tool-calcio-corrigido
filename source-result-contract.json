@@ -1,0 +1,224 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "calcio-corrigido",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "0508e83b9921ebb75e3737718a2a946cb918ea7c",
+    "oldEngineSha256": "565b18e3f4171dbc45e105e5dcbd03dbe9f1f443b2495022bab32901733d83d0",
+    "currentEngineSha256": "4eef46fc02f2cecb25796e18298139208a28923f8a0369497079acafa22312b6"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Ca 7,6, albumina 2,5: 8,8 (normal)",
+      "input": {
+        "ca": 7.6,
+        "alb": 2.5
+      },
+      "publicOutput": {
+        "id": "calcio-corrigido",
+        "main": [
+          "8,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 8.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cac": 8.8
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "level": "low",
+        "verdict": "Cálcio corrigido na faixa normal (8,5 a 10,5 mg/dL)",
+        "note": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+        "raw": {
+          "cac": 8.8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Ca 7,0, albumina 3,0: 7,8 (baixo)",
+      "input": {
+        "ca": 7,
+        "alb": 3
+      },
+      "publicOutput": {
+        "id": "calcio-corrigido",
+        "main": [
+          "7,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 7.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cac": 7.8
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,8",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "level": "mid",
+        "verdict": "Cálcio corrigido baixo (< 8,5 mg/dL): hipocalcemia provável",
+        "note": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+        "raw": {
+          "cac": 7.8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Ca 10,8, albumina 3,5: 11,2 (alto)",
+      "input": {
+        "ca": 10.8,
+        "alb": 3.5
+      },
+      "publicOutput": {
+        "id": "calcio-corrigido",
+        "main": [
+          "11,2",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 11.200000000000001
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cac": 11.2
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "11,2",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "level": "high",
+        "verdict": "Cálcio corrigido elevado (> 10,5 mg/dL): hipercalcemia provável",
+        "note": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+        "raw": {
+          "cac": 11.200000000000001
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Albumina 4,0: sem correção",
+      "input": {
+        "ca": 9,
+        "alb": 4
+      },
+      "publicOutput": {
+        "id": "calcio-corrigido",
+        "main": [
+          "9,0",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "raw": {
+          "cac": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "cac": 9
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9,0",
+          "mg/dL"
+        ],
+        "label": "Cálcio total corrigido pela albumina",
+        "level": "low",
+        "verdict": "Cálcio corrigido na faixa normal (8,5 a 10,5 mg/dL)",
+        "note": "A correção é aproximada: em paciente crítico, com distúrbio ácido-base ou doença renal, confirme com o cálcio iônico.",
+        "raw": {
+          "cac": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

@@ -65,3 +65,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Korrigiertes Kalzium im Normbereich (8,5 bis 10,5 mg/dL)
+
+Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.
+
+
+### 2
+
+Niedriges korrigiertes Kalzium (< 8,5 mg/dL): wahrscheinliche Hypokalzämie
+
+Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.
+
+
+### 3
+
+Erhöhtes korrigiertes Kalzium (> 10,5 mg/dL): wahrscheinliche Hyperkalzämie
+
+Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.
+
+
+### 4
+
+Korrigiertes Kalzium im Normbereich (8,5 bis 10,5 mg/dL)
+
+Die Korrektur ist näherungsweise: bei kritisch kranken Patienten, mit Säure-Basen-Störung oder Nierenerkrankung, mit ionisiertem Kalzium bestätigen.
+
